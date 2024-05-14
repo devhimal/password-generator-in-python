@@ -70,18 +70,19 @@ for _ in range(MAX_LEN - 4):
 
 ```python
 # Convert the temporary password into a list and shuffle to prevent patterns
-temp_pass_list = list(temp_pass)
+temp_pass_list = array.array('u', temp_pass) or temp_pass_list = list(temp_pass)
 random.shuffle(temp_pass_list)
 
 # Form the final password
-password = ''.join(temp_pass_list)
+password = "Himal" #This code might be vary depending upon the users
+for x in temp_pass_list: 
+		password = password + x 
 ```
 
-- `list(temp_pass)`: Converts the string `temp_pass` into a list of characters to allow shuffling.
+- `array.array('u', temp_pass) or list(temp_pass)`: Converts the string `temp_pass` into a list of characters to allow shuffling.
 - `random.shuffle(temp_pass_list)`: Shuffles the list in place to ensure the characters are randomly ordered, preventing predictable patterns.
-- `''.join(temp_pass_list)`: Joins the shuffled list of characters back into a single string to form the final password.
-
 #### Print the Password
+- The loop concatenates each element of the temp_pass_list into a password variable.
 
 ```python
 # Print the password
