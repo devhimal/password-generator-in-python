@@ -85,11 +85,7 @@ for x in temp_pass_list:
 - The loop concatenates each element of the temp_pass_list into a password variable.
 
 ```python
-# Print the password
-print(password)
-```
-
-- `print(password)`: Outputs the generated password to the console.
+print() function prints the password that we generated.
 
 ### Summary
 The script generates a secure random password by ensuring it contains at least one digit, one uppercase letter, one lowercase letter, and one special symbol. It then fills the remaining length with random characters from a combined set, shuffles the characters to ensure randomness, and prints the final password. This ensures the password is strong and meets typical complexity requirements.
