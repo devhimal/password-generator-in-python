@@ -84,7 +84,7 @@ for x in temp_pass_list:
 #### Print the Password
 - The loop concatenates each element of the temp_pass_list into a password variable.
 
-```python
+### python
 print() function prints the password that we generated.
 
 ### Summary
